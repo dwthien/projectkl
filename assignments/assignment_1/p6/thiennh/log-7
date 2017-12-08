@@ -1,0 +1,74 @@
+
+Starting tester...
+Tue Jul 25 04:55:41 UTC 2017
+Language: cpp
+Time Limit: 123.123 s
+Memory Limit: 123 kB
+Output size limit: 104857600 bytes
+EasySandbox: false
+C/C++ Shield: true
+Enabling Shield For C/C++
+Compiled. Exit Code=0  Execution Time: 5230 ms
+
+Testing...
+8 test cases found
+
+=== TEST 1 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input1.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+=== TEST 2 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input2.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+=== TEST 3 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input3.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+=== TEST 4 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input4.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+=== TEST 5 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input5.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+=== TEST 6 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input6.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+=== TEST 7 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input7.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+=== TEST 8 ===
+./runcode.sh cpp 123 123.123 124 /home/vagrant/Code/assignments/assignment_1/p6/in/input8.txt ./timeout --just-kill -nosandbox -l 104857600 -t 123.123 -m 123 ./s_solution7
+Exit Code = 0
+err file:SHJ_FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
+Time: 0.00 s
+ACCEPTED
+
+Score from 10000: 10000
+
+Total Execution Time: 6716 ms

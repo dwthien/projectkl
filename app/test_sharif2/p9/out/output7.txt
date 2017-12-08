@@ -1,0 +1,1 @@
+To get from b1 to c3 takes 1 knight moves.

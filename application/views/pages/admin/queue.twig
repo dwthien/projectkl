@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html" charset="UTF-8">
+
+	<link rel="stylesheet" href="{{ base_url('assets/css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ base_url('assets/css/bootstrap-theme.min.css') }}">
+	<link rel="stylesheet" href="{{ base_url('assets/css/style.css') }}">
+
+	<script type="text/javascript" src="{{ base_url('assets/js/jquery-3.2.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ base_url('assets/js/jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ base_url('assets/js/bootstrap.min.js') }}"></script>
+	<script>
+		$(document).ready(function(){
+			$(".shj_act").click(function(){
+				var action=$(this).attr('id');
+				$.post(
+						'{{ site_url('queue') }}/'+action,
+						{shj_csrf_token: shj.csrf_token},
+						function(data){
+							if (data=='success')
+								location.reload();
+						}
+				);
+			});
+		});
+	</script>
+</head>
+<body>
+	{% include 'templates/bar.twig' %}
+	<div class="container padding-nav">
+		<div class="row">
+			<div class="col-md-9">
+				<p>
+					{% if working %}
+						<span class="glyphicon glyphicon-play"></span> Queue is working
+					{% else %}
+						<span class="glyphicon glyphicon-pause"></span> Queue is not working
+					{% endif %}
+					| Total submissions in queue: {{ queue|length }}
+				</p>
+				<p>
+					<a href="#" class="shj_act" id="pause"><span class="glyphicon glyphicon-pause"></span> Pause</a> |
+					<a href="#" class="shj_act" id="resume"><span class="glyphicon glyphicon-play"></span> Resume</a> |
+					<a href="#" class="shj_act" id="empty_queue"><span class="glyphicon glyphicon-trash"></span> Empty Queue</a>
+				</p>
+				<table class="table table-hover table-striped databaitap">
+					<thead>
+					<tr>
+						<th>#</th>
+						<th>Submit ID</th>
+						<th>Usename</th>
+						<th>Assignment</th>
+						<th>Problem</th>
+						<th>Type (judge/rejudge)</th>
+					</tr>
+					</thead>
+					{% for item in queue %}
+						<tr>
+							<td>{{ loop.index }}</td>
+							<td>{{ item.submit_id }}</td>
+							<td>{{ item.username }}</td>
+							<td>{{ item.assignment }} (<span dir="auto">{{ all_assignments[item.assignment].name }}</span>)</td>
+							<td>{{ item.problem }}</td>
+							<td>{{ item.type }}</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+To get from a1 to h7 takes 5 knight moves.

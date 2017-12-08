@@ -1,0 +1,1 @@
+To get from a1 to b2 takes 4 knight moves.

@@ -1,0 +1,1 @@
+To get from a1 to h8 takes 6 knight moves.

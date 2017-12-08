@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
+	<meta name="created" content="2017-04-05T16:00:16.261182972"/>
+	<meta name="changed" content="2017-04-10T19:27:37.129042215"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+	</style>
+</head>
+<body lang="en-US" dir="ltr">
+<p style="margin-bottom: 0in; line-height: 100%">Surely you have made
+the experience that when too many people use the Internet
+simultaneously, the</p>
+<p style="margin-bottom: 0in; line-height: 100%">net becomes very,
+very slow.</p>
+<p style="margin-bottom: 0in; line-height: 100%">To put an end to
+this problem, the University of Ulm has developed a contingency
+scheme for times</p>
+<p style="margin-bottom: 0in; line-height: 100%">of peak load to cut
+off net access for some cities of the country in a systematic,
+totally fair manner.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Germany’s cities
+were enumerated randomly from 1 to n. Freiburg was number 1, Ulm was
+number 2,</p>
+<p style="margin-bottom: 0in; line-height: 100%">Karlsruhe was number
+3, and so on in a purely random order.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Then a number m
+would be picked at random, and Internet access would first be cut off
+in city 1</p>
+<p style="margin-bottom: 0in; line-height: 100%">(clearly the fairest
+starting point) and then in every mth city after that, wrapping
+around to 1 after n,</p>
+<p style="margin-bottom: 0in; line-height: 100%">and ignoring cities
+already cut off. For example, if n = 17 and m = 5, net access would
+be cut off to</p>
+<p style="margin-bottom: 0in; line-height: 100%">the cities in the
+order [1,6,11,16,5,12,2,9,17,10,4,15,14,3,8,13,7]. The problem is
+that it is clearly fairest</p>
+<p style="margin-bottom: 0in; line-height: 100%">to cut off Ulm last
+(after all, this is where the best programmers come from), so for a
+given n, the</p>
+<p style="margin-bottom: 0in; line-height: 100%">random number m
+needs to be carefully chosen so that city 2 is the last city
+selected.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Your job is to write
+a program that will read in a number of cities n and then determine
+the smallest</p>
+<p style="margin-bottom: 0in; line-height: 100%">integer m that will
+ensure that Ulm can surf the net while the rest of the country is cut
+off.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Input</p>
+<p style="margin-bottom: 0in; line-height: 100%">The input file will
+contain one or more lines, each line containing one integer n with 3
+≤ n &lt; 150,</p>
+<p style="margin-bottom: 0in; line-height: 100%">representing the
+number of cities in the country.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Input is terminated
+by a value of zero (0) for n.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Output</p>
+<p style="margin-bottom: 0in; line-height: 100%">For each line of the
+input, print one line containing the integer m fulfilling the
+requirement specified</p>
+<p style="margin-bottom: 0in; line-height: 100%">above.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Sample Input</p>
+<p style="margin-bottom: 0in; line-height: 100%">3</p>
+<p style="margin-bottom: 0in; line-height: 100%">4</p>
+<p style="margin-bottom: 0in; line-height: 100%">5</p>
+<p style="margin-bottom: 0in; line-height: 100%">6</p>
+<p style="margin-bottom: 0in; line-height: 100%">7</p>
+<p style="margin-bottom: 0in; line-height: 100%">8</p>
+<p style="margin-bottom: 0in; line-height: 100%">9</p>
+<p style="margin-bottom: 0in; line-height: 100%">10</p>
+<p style="margin-bottom: 0in; line-height: 100%">11</p>
+<p style="margin-bottom: 0in; line-height: 100%">12</p>
+<p style="margin-bottom: 0in; line-height: 100%">0</p>
+<p style="margin-bottom: 0in; line-height: 100%">Sample Output</p>
+<p style="margin-bottom: 0in; line-height: 100%">2</p>
+<p style="margin-bottom: 0in; line-height: 100%">5</p>
+<p style="margin-bottom: 0in; line-height: 100%">2</p>
+<p style="margin-bottom: 0in; line-height: 100%">4</p>
+<p style="margin-bottom: 0in; line-height: 100%">3</p>
+<p style="margin-bottom: 0in; line-height: 100%">11</p>
+<p style="margin-bottom: 0in; line-height: 100%">2</p>
+<p style="margin-bottom: 0in; line-height: 100%">3</p>
+<p style="margin-bottom: 0in; line-height: 100%">8</p>
+<p style="margin-bottom: 0in; line-height: 100%">16</p>
+</body>
+</html>
